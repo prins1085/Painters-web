@@ -1,0 +1,126 @@
+/* General Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #ad9441;
+  padding: 1rem 1rem;
+  border-bottom: 3px solid rgb(161, 0, 0);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #ad9441;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive; 
+}
+
+.burger {
+  cursor: pointer;
+  display: none; 
+  background-color: black;
+  border: none;
+}
+
+.burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #ad9441;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; 
+  width: 250px;
+  height: 100vh;
+  background-color: black;
+  transition: right 0.3s ease;
+  display: none;
+}
+
+.sidebar.open {
+  right: 0; 
+  display: flex; 
+  z-index: 1;
+}
+
+.sidebar ul,
+.sidebar ul li {
+  width: 100%; 
+}
+
+.sidebar ul {
+  padding: 50px 100px;
+  list-style: none; 
+}
+
+.sidebar ul li a {
+  color: #ad9441;
+  text-decoration: none;
+  display: block; 
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+  color: white;
+}
+
+.close-sidebar {
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #ad9441; 
+  font-size: 24px; 
+}
+
+/* Desktop Styles */
+.menu-desktop {
+  display: none; 
+}
+
+.menu-desktop ul {
+  display: flex; 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.menu-desktop ul li {
+  padding: 0 10px; 
+}
+
+.menu-desktop ul li a {
+  color: #ad9441;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-desktop ul li a:hover {
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .sidebar {
+    display: block; 
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-desktop {
+    display: block; 
+  }
+}

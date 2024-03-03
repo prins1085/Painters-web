@@ -1,0 +1,184 @@
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.welcome-section {
+  background-image: url("../../assets/bg_image.jpg");
+  height: 450px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-section h2 {
+  font-family: "Pacifico", cursive; 
+  font-size: 48px; 
+  color: #ffffff; /* Change text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px; 
+  text-align: center; 
+}
+
+.popular-works-section {
+  padding: 20px;
+  text-align: center; 
+}
+
+.popular-works-header {
+  font-family: "Montserrat", sans-serif; 
+  font-size: 28px; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 20px; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease; 
+}
+
+.popular-works-header:hover {
+  color: #ad9441; 
+}
+
+.work-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-item {
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.view-all-works {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; 
+  background-color: #ad9441; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
+  margin-top: 20px;
+  border: 1px solid #ad9441; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.view-all-works:hover {
+  background-color: #fff; 
+  color: #ad9441; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.about-section {
+  text-align: center;
+  padding: 20px;
+}
+.about-section h2 {
+  font-family: "Montserrat", sans-serif; 
+  font-size: 28px; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 20px; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+.about-section h2:hover {
+  color: #ad9441; 
+}
+
+.about-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.about-card h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.about-link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ad9441;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+  border: 1px solid #ad9441; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.about-link:hover {
+  background-color: #fff; 
+  color: #ad9441; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
